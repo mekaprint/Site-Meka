@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MEKA PRINT | Services de Création & Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      .nav-link {
+        position: relative;
+      }
+      .nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #3b82f6;
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover:after {
+        width: 100%;
+      }
+
+      .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-gradient {
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        background-size: 200% 200%;
+        animation: gradient 10s ease infinite;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .gallery-item {
+        transition: all 0.3s ease;
+      }
+      .gallery-item:hover {
+        transform: scale(1.03);
+      }
+
+      .social-icon {
+        transition: transform 0.3s ease;
+      }
+      .social-icon:hover {
+        transform: translateY(-3px);
+      }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex items-center">
+          <i class="fas fa-cube text-3xl text-blue-600 mr-2"></i>
+          <a href="https://mekaprint.bzh" class="text-xl font-bold text-gray-900" target="_blank" rel="noopener noreferrer">MEKA PRINT</a>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#accueil" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">Accueil</a>
+          <a href="#services" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">Services</a>
+          <a href="#apropos" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">À propos</a>
+          <a href="#realisations" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">Réalisations</a>
+          <a href="#contact" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="accueil" class="hero-gradient text-white py-20">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Impression 3D, Montage Vidéo & Réparation Électronique
+      </h1>
+      <p class="text-xl mb-8 text-blue-100">
+        Créations sur mesure, captures aériennes et réparations écologiques
+      </p>
+      <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Demander un devis</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Nos services</h2>
+      <p class="mb-12 text-gray-500">
+        Solutions techniques et créatives adaptées à vos besoins
+      </p>
+      <div class="grid grid-cols-1 md=grid-cols-3 gap=8">
+        <!-- Impression 3D -->
+        <div class="service-card p-8 bg-gray-50 rounded-xl border">
+          <i class="fas fa-print text-blue-600 text-3xl mb-4"></i>
+          <h3 class="text-lg font-bold">Impression 3D Sur-Mesure</h3>
+          <p class="mt-2 text-gray-600">
+            Avec MEKA PRINT, donnez forme à vos projets grâce à l'impression 3D sur-mesure. Que vous souhaitiez un prototype, une pièce unique ou un objet personnalisé, je conçois et imprime vos créations avec précision et qualité. Innovante et éco-responsable, l'impression 3D ouvre la voie à des solutions adaptées à vos besoins, tout en réduisant le gaspillage.
+          </p>
+        </div>
+
+        <!-- Montage Vidéo -->
+        <div class="service-card p-8 bg-gray-50 rounded-xl border">
+          <i class="fas fa-video text-green-600 text-3xl mb-4"></i>
+          <h3 class="text-lg font-bold">Montage Vidéo Créatif</h3>
+          <p class="mt-2 text-gray-600">
+            Chez MEKA PRINT, je transforme vos idées en vidéos dynamiques et originales. Que ce soit pour vos projets personnels, professionnels ou vos réseaux sociaux, je crée des montages sur-mesure, mêlant créativité et technicité, pour captiver votre audience et valoriser vos contenus. Chaque vidéo est conçue pour raconter votre histoire avec impact et modernité.
+          </p>
+        </div>
+
+        <!-- Réparations -->
+        <div class="service-card p-8 bg-gray-50 rounded-xl border">
+          <i class="fas fa-tools text-yellow-600 text-3xl mb-4"></i>
+          <h3 class="text-lg font-bold">Réparation d'Objets Électroniques</h3>
+          <p class="mt-2 text-gray-600">
+            Chez MEKA PRINT, nous redonnons vie à vos appareils électroniques grâce à une réparation rapide, fiable et durable. Smartphones, tablettes, casques audio ou autres gadgets, nous réparons vos objets avec soin pour prolonger leur durée de vie et limiter les déchets électroniques.
+          </p>
+          <p class="mt-2 text-gray-600 font-semibold">
+            Pourquoi choisir MEKA PRINT ?
+          </p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Expertise de maker passionné</li>
+            <li>Solutions responsables et économiques</li>
+            <li>Service rapide et personnalisé</li>
+          </ul>
+          <p class="mt-2 text-gray-600 font-semibold">
+            Faites le choix d'un futur plus durable : réparez plutôt que de remplacer !
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos Section -->
+  <section id="apropos" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Notre histoire</h2>
+        <div class="max-w-3xl mx-auto">
+          <p class="text-lg text-gray-600 mb-8">
+            MEKA PRINT, c'est l'histoire d'une passion née de la créativité et de la technologie. À travers l'impression 3D, le pilotage de drone et l'innovation, MEKA PRINT transforme des idées en objets concrets, uniques et utiles. Toujours en quête de nouvelles solutions, MEKA PRINT ne cesse de repousser les limites pour offrir des créations personnalisées, adaptées aux besoins d'aujourd'hui et aux défis de demain. Une aventure maker tournée vers l'avenir, où chaque projet est une promesse d'innovation.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-12">
+        <div class="flex items-start">
+          <div class="flex-shrink-0">
+            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+          </div>
+          <div class="ml-3">
+            <p class="text-base font-medium text-gray-900">Support personnalisé</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0">
+            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+          </div>
+          <div class="ml-3">
+            <p class="text-base font-medium text-gray-900">Approche éco-responsable</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900">Contactez-nous</h2>
+        <p class="mt-4 text-xl text-gray-500">Discutons de votre projet !</p>
+      </div>
+      
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <div class="flex items-center justify-center mb-6">
+            <i class="fas fa-envelope text-blue-600 text-3xl mr-4"></i>
+            <div>
+              <h3 class="text-xl font-bold">Envoyez-nous un email</h3>
+              <p class="text-blue-600 font-medium">mekaprint.bzh@gmail.com</p>
+            </div>
+          </div>
+          
+          <p class="text-gray-600 mb-8">
+            Pour toute demande de devis ou information, n'hésitez pas à nous contacter par email. Nous vous répondrons dans les plus brefs délais.
+          </p>
+          
+          <div class="flex justify-center space-x-6 mb-8">
+            <a href="https://www.youtube.com/@Meka_print" target="_blank" class="social-icon text-red-600 text-2xl">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/mekaprint.bzh" target="_blank" class="social-icon text-pink-600 text-2xl">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          
+          <a href="mailto:mekaprint.bzh@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition inline-block">
+            <i class="fas fa-paper-plane mr-2"></i> Envoyer un email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-gray-100 text-center py-8 mt-12">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://www.youtube.com/@Meka_print" target="_blank" class="social-icon text-gray-600 hover:text-red-600">
+        <i class="fab fa-youtube text-xl"></i>
+      </a>
+      <a href="https://instagram.com/mekaprint.bzh" target="_blank" class="social-icon text-gray-600 hover:text-pink-600">
+        <i class="fab fa-instagram text-xl"></i>
+      </a>
+    </div>
+    <p class="text-gray-500">&copy; 2025 MEKA PRINT - Créé avec passion par un jeune maker en bord de mer.</p>
+  </footer>
+</body>
+</html>
